@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    background-color: burlywood;
+}
+
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:"Poppins" ,sans-serif;
+    margin: 3rem;
+    font-size: 30px;
+}
+.task-entry-row{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.task-enter-box{
+   width:50%;
+   font-size: 20px;
+   padding: 1%;
+   margin: 2% 0;
+   border:none;
+   border-radius: 5px;
+   color: black;
+}
+
+.task-enter-box:focus{
+    outline-width: 0;
+}
+
+.task-submit-btn{
+    padding: 1%; 
+    font-size: 25px;
+     border: none;
+     background-color: white;
+     color:burlywood ;
+     border-radius: 5px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     margin-left: -2%;
+     margin-right: 3%;
+}
+ 
+.task-submit-btn:hover{
+    background-color: burlywood;
+    color:white;
+    border:1px solid black;
+}
+ h2{
+    text-align: center;
+ }
+.todo-list-container{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+     width:70%; 
+    margin:auto;
+   
+}
+
+/* ul class */
+.todo-list{
+    min-width: 80%;
+    list-style: none;
+}
+/* div */
+.todo{
+    margin: 0.3em;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.1rem 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.todo-item{
+    padding:0.5rem;
+    font-size:1.5em;
+}
+
+.delete-btn,.completed-btn{
+     padding:0.5rem;
+    font-size:1rem;    
+    margin:0.1rem;
+    cursor: pointer;
+}
+.delete-btn{
+    color:red;
+}
+.completed-btn{   
+    color:green;   
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through; 
+    opacity: 0.5 ;
+}
+
+.select{
+    display: flex;
+    align-items: center;
+    
+}
+
+.filter-todo{
+    font-size: 15px;
+    padding: 10%;
+   margin: 2% 0;
+   border:none;
+   border-radius: 5px;
+   min-height:50%;
+}
